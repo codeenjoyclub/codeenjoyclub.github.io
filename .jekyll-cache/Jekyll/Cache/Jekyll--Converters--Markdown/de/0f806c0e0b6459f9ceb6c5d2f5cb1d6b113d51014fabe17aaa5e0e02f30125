@@ -1,8 +1,9 @@
+I"�
 <div class="about row">
     <div class="col-md-12">
         <h2>About me </h2>
         
-        <br/>
+        <br />
 
         <p>
           2019 年，毕业于南京某大学，进入一家公司做 Java 开发。
@@ -39,7 +40,7 @@
 
         <p><strong>Personal</strong></p>
         <ul>
-            <li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
+            <li>Email：<a href="mailto:codeenjoy_mail@163.com" target="_top">codeenjoy_mail@163.com</a></li>
             <!-- <li>我的微信：<strong></strong>（备注：博客）</li> -->
         </ul>
 
@@ -92,10 +93,11 @@
         </p>
 
         <p align="center">
-            <img src="http://www.ityouknow.com/assets/images/tip.jpg"/>
-            <br/>
+            <img src="http://www.ityouknow.com/assets/images/tip.jpg" />
+            <br />
             微信扫一扫
         </p>
 
     </div>
 </div>
+:ET
