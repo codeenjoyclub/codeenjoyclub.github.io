@@ -63,17 +63,17 @@ paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them :D
 # Navigation. top menu list
-# menus:
+menus:
 
   # -
     # href: /link.html
     # label: 友链
     # target: _self
 
-  # -
-    # href: /about.html
-    # label: 关于
-    # target: _self
+  -
+    href: /about.html
+    label: 关于
+    target: _self
 
 # Navigation. main menu list
 navs:
@@ -188,9 +188,9 @@ navs:
     href: /archives.html
     label: Archives
 
-  -
-    href: /about.html
-    label: About
+  # -
+    # href: /about.html
+    # label: About
 
 
 # Sidebar to show popular repo

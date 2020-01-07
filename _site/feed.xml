@@ -5,22 +5,22 @@
     <description>description</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jan 2020 09:31:59 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Jan 2020 09:31:59 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Jan 2020 12:11:54 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Jan 2020 12:11:54 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>[ Java 札记 ] Java Tutorial 之</title>
+        <title>[ Java Tutorial ] Java 学习计划</title>
         <description>
 </description>
         <pubDate>Fri, 03 Jan 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/java/2020/01/03/Java-Tutorial-01.html</link>
-        <guid isPermaLink="true">http://localhost:4000/java/2020/01/03/Java-Tutorial-01.html</guid>
+        <link>http://localhost:4000/java_se_tutorial/2020/01/03/Java-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/java_se_tutorial/2020/01/03/Java-Tutorial-01.html</guid>
         
         <category>java</category>
         
         
-        <category>java</category>
+        <category>java_se_tutorial</category>
         
       </item>
     

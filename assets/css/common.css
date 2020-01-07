@@ -362,7 +362,7 @@ blockquote {
 .site-header-topbar {
     position: absolute;
     left: 0;
-    top: -40px;
+    top: -35px;
     right: 0;
     z-index: 10;
     padding: 10px 0;
