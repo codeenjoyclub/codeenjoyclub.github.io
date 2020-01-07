@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> Hadoop Tutorial 01 ( Hadoop 概述 ) - 码农乐享 </title>
+    <meta name="keywords" content="keywords">
+    <meta name="description"
+          content="&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+">
+
+    <link rel="canonical" href="http://localhost:4000/hadoop/2018/12/15/Hadoop-Tutorial-01.html">
+    <link rel="alternate" type="application/rss+xml" title="分享技术，收获快乐" href="http://localhost:4000/feed.xml">
+
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="/assets/components/font-awesome-4.7.0/css/font-awesome.css">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lock.js"></script>
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="码农乐享">
+            <!-- <span class="octicon octicon-smiley"></span> -->
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+            码农乐享
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" selected  site-header-nav-item hvr-underline-from-center">
+                <a href=""
+                   target=""
+                   title="">
+                    
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target="_self"
+                   title="Java">
+                    Java
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li>
+                        <a class="subNav" href="/java_se_tutorial.html" target="">
+                            Java 教程
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" selected  site-header-nav-item hvr-underline-from-center">
+                <a href=""
+                   target=""
+                   title="">
+                    
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target=""
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target=""
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="Hadoop Tutorial 01 ( Hadoop 概述 )" data-geopattern-id="">
+    <div class="container">
+        <div id="jumbotron-meta-info">        
+            <h1>Hadoop Tutorial 01 ( Hadoop 概述 )</h1>
+            <span class="meta-info">
+                
+                
+                <i class="fa fa-calendar" aria-hidden="true"></i> 2018/12/15
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('geopattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <h2 id="目录">目录</h2>
+
+<h3 id="1-hadoop-是什么">1. Hadoop 是什么</h3>
+
+<h3 id="2-hadoop-发展史">2. Hadoop 发展史</h3>
+
+<h3 id="3-hadoop-的优势与劣势">3. Hadoop 的优势与劣势</h3>
+
+<h3 id="4-hadoop-组成">4. Hadoop 组成</h3>
+
+<h2 id="一--hadoop-是什么">一 、 Hadoop 是什么</h2>
+
+<p><img src="https://alicloud-samuel.oss-cn-shanghai.aliyuncs.com/gitshenbin.gitee.io/hadoop/Hadoop.png" alt="Hadoop" title="Hadoop" /></p>
+
+<p>      Hadoop 是由 Apache 基金会所开发的分布式基础架构。具有数据存储以及数据高速运算的功能，适合一次写入、多次读出的应用场景。</p>
+
+<!-- > 分布式系统  
+    　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分布式系统是指由多个计算机节点组成的系统，节点之间通过网络进行通信。   -->
+
+<h2 id="二--hadoop-发展史">二 、 Hadoop 发展史</h2>
+
+<h2 id="三--hadoop-特征">三 、 Hadoop 特征</h2>
+
+<h3 id="1-高可靠性">1. 高可靠性</h3>
+
+<h3 id="2-高扩展性">2. 高扩展性</h3>
+
+<h3 id="3-高效性">3. 高效性</h3>
+
+<h3 id="4-高容错性">4. 高容错性</h3>
+
+<h2 id="四--hadoop-组成">四 、 Hadoop 组成</h2>
+
+<h3 id="1-hdfs">1. HDFS</h3>
+
+<p>      HDFS ( Hadoop Distributed File System ) 称为 Hadoop 分布式文件系统。用于存储文件，适合一次写入、多次读出的场景，具有高可靠、高吞吐量的特性。</p>
+
+<h3 id="2-mapreduce">2. MapReduce</h3>
+
+<p>      MapReduce 是一种分布式的计算框架。指定一个 Map 函数和一个 Reduce 函数，分别用于把一组键值对映射成一组新的键值对 ( Map ) 和保证所有映射的键值对中的每一个共享相同的键组 ( Reduce )。</p>
+
+<h3 id="3-yarn">3. YARN</h3>
+
+<p>      传统的 MapReduce 架构拥有 JobTracker 和 TaskTracker 两个组件，存在单点故障以及资源利用率低等问题。 YARN 将 JobTracker 的功能进行拆分，避免了传统架构的单点故障问题以及资源利用率问题。</p>
+
+<h3 id="4-common">4. Common</h3>
+
+<p>      Common 是 Hadoop 中的一个辅助工具，为其他模块提供工具支持。</p>
+
+
+            <!-- Comments -->
+            
+
+        </div>
+
+        <div class="col-md-4">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    <footer class="container">
+    <div class="site-footer">
+      
+          <div class="card text-center">
+            <!-- 京ICP备15067287号-3 -->
+           
+        </div>
+        <div class="site-footer-links mobile-hidden">
+            
+        </div>
+
+        <div class="scrolltop">
+            
+        </div>
+        <div class="rss">
+           
+        </div>
+    </div>
+    <!-- Third-Party JS -->
+    <script type="text/javascript" src="/assets/js/footer-geopattern.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="/assets/js/footer-script.js"></script>
+    
+</footer>
+
+
+    </body>
+
+</html>

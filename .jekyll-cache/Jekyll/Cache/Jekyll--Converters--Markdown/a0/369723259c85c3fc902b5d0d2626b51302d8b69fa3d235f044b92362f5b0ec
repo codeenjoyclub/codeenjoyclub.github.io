@@ -1,0 +1,17 @@
+I"[<h2 id="目录">目录</h2>
+
+<h3 id="1-mapreduce-是什么">1. MapReduce 是什么</h3>
+
+<h3 id="2-mapreduce-架构">2. MapReduce 架构</h3>
+
+<h2 id="一--mapreduce-是什么">一 、 MapReduce 是什么</h2>
+
+<p>      MapReduce 是一种分布式的计算框架。指定一个 Map 函数和一个 Reduce 函数，分别用于把一组键值对映射成一组新的键值对 ( Map ) 和保证所有映射的键值对中的每一个共享相同的键组 ( Reduce )。</p>
+
+<h2 id="二--mapreduce-架构">二 、 MapReduce 架构</h2>
+
+<h3 id="1-map">1. Map</h3>
+
+<h3 id="2-reduce">2. Reduce</h3>
+
+:ET

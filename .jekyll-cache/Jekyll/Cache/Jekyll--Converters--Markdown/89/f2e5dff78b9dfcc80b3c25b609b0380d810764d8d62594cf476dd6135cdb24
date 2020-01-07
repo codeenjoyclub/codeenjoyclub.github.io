@@ -1,0 +1,71 @@
+I"­<div class="row">
+
+    <div class="col-md-9">
+
+        <!-- Blog list -->
+        <ul id="posts-list">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+
+        <!-- Pagination -->
+        
+
+
+        <!-- Comments -->
+       <div class="comment">
+         
+
+  
+
+  
+
+
+       </div>
+
+    </div>
+
+    <div class="col-md-3">
+      
+    </div>
+
+</div>
+<script>
+    $(document).ready(function(){
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+    });
+</script>
+
+:ET

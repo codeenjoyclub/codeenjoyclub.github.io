@@ -1,0 +1,50 @@
+I"R<h2 id="一新增用户">一、新增用户</h2>
+
+<h3 id="1-登录-root-账号">1. 登录 root 账号</h3>
+
+<h3 id="2-新建用户">2. 新建用户</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   useradd username
+</code></pre></div></div>
+
+<h3 id="3-更改用户密码激活使用">3. 更改用户密码，激活使用</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   passwd 123456
+</code></pre></div></div>
+
+<h3 id="4-添加-sudo-权限">4. 添加 sudo 权限</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   visudo
+
+   username   ALL=(ALL)   ALL
+</code></pre></div></div>
+
+<h2 id="二安装-jdk">二、安装 JDK</h2>
+
+<h3 id="1-上传-jdk18-压缩包至指定文件夹">1. 上传 JDK1.8 压缩包至指定文件夹</h3>
+
+<h3 id="2-解压-jdk18-压缩包并重命名">2. 解压 JDK1.8 压缩包并重命名</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tar -xzvf jdk1.8 -C /home/username/modules
+</code></pre></div></div>
+
+<h3 id="3-使用-root-用户登录并配置环境变量">3. 使用 root 用户登录并配置环境变量</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   # JAVA_HOME
+   JAVA_HOME=/home/samuel/module/jdk1.8.0
+
+   export PATH=${JAVA_HOME}/bin:$PATH
+</code></pre></div></div>
+
+<h3 id="4-刷新环境变量配置使它生效">4. 刷新环境变量配置，使它生效</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   source /etc/profile
+</code></pre></div></div>
+
+<h3 id="5-测试-jdk-安装是否成功">5. 测试 JDK 安装是否成功</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   javac -version
+
+   java -version
+</code></pre></div></div>
+:ET

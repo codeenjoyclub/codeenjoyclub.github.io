@@ -1,0 +1,39 @@
+I"�<h2 id="目录">目录</h2>
+
+<h3 id="1-hdfs-是什么">1. HDFS 是什么</h3>
+
+<h3 id="2-hdfs-架构">2. HDFS 架构</h3>
+
+<h3 id="3-hdfs-数据流">3. HDFS 数据流</h3>
+
+<h3 id="4-namenode-工作机制">4. NameNode 工作机制</h3>
+
+<h3 id="5-datanode-工作机制">5. DataNode 工作机制</h3>
+
+<h2 id="一--hdfs-是什么">一 、 HDFS 是什么</h2>
+
+<p>      HDFS ( Hadoop Distributed File System ) 称为 Hadoop 分布式文件系统。用于存储文件，通过目录树来定位文件所在位置。具有高可靠、高吞吐量的特性，适合一次写入、多次读出的场景。</p>
+
+<h2 id="二--hdfs-架构">二 、 HDFS 架构</h2>
+
+<h3 id="1-block-数据块">1. Block 数据块</h3>
+
+<h3 id="2-namenode">2. NameNode</h3>
+
+<p>      NameNode 是一个中心服务器，主要用于存储文件系统的元数据以及每个文件所对应的的块信息。</p>
+
+<h3 id="3-datanode">3. DataNode</h3>
+
+<p>      DataNode 主要用于存储文件数据块信息，每一个数据块都可以在多个 DataNode 中存储多个副本。</p>
+
+<h3 id="4-secondary-namenode">4. Secondary NameNode</h3>
+
+<p>      Secondary NameNode 用来监控 HDFS 状态的辅助后台程序，每隔一段时间 Secondary NameNode 会自动获取 HDFS 元数据的快照。</p>
+
+<h2 id="三--hdfs-数据流">三 、 HDFS 数据流</h2>
+
+<h2 id="四--namenode-工作机制">四 、 NameNode 工作机制</h2>
+
+<h2 id="五--datanode-工作机制">五 、 DataNode 工作机制</h2>
+
+:ET

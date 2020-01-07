@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <title> CentOS Setup - 码农乐享 </title>
+    <meta name="keywords" content="keywords">
+    <meta name="description"
+          content="&lt;h2 id=&quot;一新增用户&quot;&gt;一、新增用户&lt;/h2&gt;
+">
+
+    <link rel="canonical" href="http://localhost:4000/centos/setup/2018/10/01/CentOS-Setup.html">
+    <link rel="alternate" type="application/rss+xml" title="分享技术，收获快乐" href="http://localhost:4000/feed.xml">
+
+
+    <!-- Third-Party CSS -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+
+    <!-- CSS set in layout -->
+    
+    <link rel="stylesheet" href="/assets/css/sidebar-post-nav.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="/assets/components/font-awesome-4.7.0/css/font-awesome.css">
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lock.js"></script>
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="site-header-topbar">
+        <div class="container">
+            <div class="topbar-menu">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a id="site-header-brand" href="/" title="码农乐享">
+            <!-- <span class="octicon octicon-smiley"></span> -->
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+            码农乐享
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target=""
+                   title="Home">
+                    Home
+                </a>
+                
+            </div>
+            
+            <div class=" selected  site-header-nav-item hvr-underline-from-center">
+                <a href=""
+                   target=""
+                   title="">
+                    
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/"
+                   target="_self"
+                   title="Java">
+                    Java
+                </a>
+                
+                <ul class="submenu">
+                    
+                    <li>
+                        <a class="subNav" href="/java_se_tutorial.html" target="">
+                            Java 教程
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class=" selected  site-header-nav-item hvr-underline-from-center">
+                <a href=""
+                   target=""
+                   title="">
+                    
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/archives.html"
+                   target=""
+                   title="Archives">
+                    Archives
+                </a>
+                
+            </div>
+            
+            <div class=" site-header-nav-item hvr-underline-from-center">
+                <a href="/about.html"
+                   target=""
+                   title="About">
+                    About
+                </a>
+                
+            </div>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="CentOS Setup" data-geopattern-id="">
+    <div class="container">
+        <div id="jumbotron-meta-info">        
+            <h1>CentOS Setup</h1>
+            <span class="meta-info">
+                
+                
+                <i class="fa fa-calendar" aria-hidden="true"></i> 2018/10/01
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('geopattern-id'));
+        });
+
+    });
+</script>
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row">
+
+        
+        <div class="col-md-8 markdown-body">
+
+            <h2 id="一新增用户">一、新增用户</h2>
+
+<h3 id="1-登录-root-账号">1. 登录 root 账号</h3>
+
+<h3 id="2-新建用户">2. 新建用户</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   useradd username
+</code></pre></div></div>
+
+<h3 id="3-更改用户密码激活使用">3. 更改用户密码，激活使用</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   passwd 123456
+</code></pre></div></div>
+
+<h3 id="4-添加-sudo-权限">4. 添加 sudo 权限</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   visudo
+
+   username   ALL=(ALL)   ALL
+</code></pre></div></div>
+
+<h2 id="二安装-jdk">二、安装 JDK</h2>
+
+<h3 id="1-上传-jdk18-压缩包至指定文件夹">1. 上传 JDK1.8 压缩包至指定文件夹</h3>
+
+<h3 id="2-解压-jdk18-压缩包并重命名">2. 解压 JDK1.8 压缩包并重命名</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   tar -xzvf jdk1.8 -C /home/username/modules
+</code></pre></div></div>
+
+<h3 id="3-使用-root-用户登录并配置环境变量">3. 使用 root 用户登录并配置环境变量</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   # JAVA_HOME
+   JAVA_HOME=/home/samuel/module/jdk1.8.0
+
+   export PATH=${JAVA_HOME}/bin:$PATH
+</code></pre></div></div>
+
+<h3 id="4-刷新环境变量配置使它生效">4. 刷新环境变量配置，使它生效</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   source /etc/profile
+</code></pre></div></div>
+
+<h3 id="5-测试-jdk-安装是否成功">5. 测试 JDK 安装是否成功</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   javac -version
+
+   java -version
+</code></pre></div></div>
+
+
+            <!-- Comments -->
+            
+
+        </div>
+
+        <div class="col-md-4">
+            <h3>Post Directory</h3>
+<div id="post-directory-module">
+<section class="post-directory">
+    <!-- Links that trigger the jumping -->
+    <!-- Added by javascript below -->
+    <dl></dl>
+</section>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $( "article h2" ).each(function( index ) {
+            $(".post-directory dl").append("<dt><a class=\"jumper\" hre=#" +
+                    $(this).attr("id")
+                    + ">"
+                    + $(this).text()
+                    + "</a></dt>");
+
+            var children = $(this).nextUntil("h2", "h3")
+
+            children.each(function( index ) {
+                $(".post-directory dl").append("<dd><a class=\"jumper\" hre=#" +
+                        $(this).attr("id")
+                        + ">"
+                        + "&nbsp;&nbsp;- " + $(this).text()
+                        + "</a></dd>");
+            });
+        });
+
+        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+
+        $(window).scroll(function() {                  // assign scroll event listener
+
+            var currentScroll = $(window).scrollTop(); // get current position
+
+            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                $('#post-directory-module').css({      // scroll to that element or below it
+                    top: '100px',
+                    position: 'fixed',
+                    width: 'inherit'
+                });
+            } else {                                   // apply position: static
+                $('#post-directory-module').css({      // if you scroll above it
+                    position: 'inherit',
+                    width: 'inherit'
+                });
+            }
+
+        });
+
+        $("a.jumper").on("click", function( e ) {
+
+            e.preventDefault();
+
+            $("body, html").animate({
+                scrollTop: ($( $(this).attr('hre') ).offset().top - 100)
+            }, 600);
+
+        });
+    });
+
+</script>
+        </div>
+        
+
+    </div>
+
+</article>
+
+        </div>
+
+    <footer class="container">
+    <div class="site-footer">
+      
+          <div class="card text-center">
+            <!-- 京ICP备15067287号-3 -->
+           
+        </div>
+        <div class="site-footer-links mobile-hidden">
+            
+        </div>
+
+        <div class="scrolltop">
+            
+        </div>
+        <div class="rss">
+           
+        </div>
+    </div>
+    <!-- Third-Party JS -->
+    <script type="text/javascript" src="/assets/js/footer-geopattern.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="/assets/js/footer-script.js"></script>
+    
+</footer>
+
+
+    </body>
+
+</html>

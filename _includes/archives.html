@@ -1,0 +1,17 @@
+<ul class="archives-list">
+    <h3>2020</h3>
+    {% for post in site.posts %}
+        <li>
+            <span>{{ post.date | date: "%m-%d" }}</span>
+            <a href="{{ site.url }}{{ post.url }}" style="margin-left: 6px;">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+<script>
+    $(document).ready(function(){
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+    });
+</script>

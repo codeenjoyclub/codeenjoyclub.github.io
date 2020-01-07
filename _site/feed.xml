@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分享技术，收获快乐</title>
+    <description>description</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 07 Jan 2020 08:34:51 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Jan 2020 08:34:51 +0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>[ Java 札记 ] Java Tutorial 之</title>
+        <description>
+</description>
+        <pubDate>Fri, 03 Jan 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/java/2020/01/03/Java-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/java/2020/01/03/Java-Tutorial-01.html</guid>
+        
+        <category>java</category>
+        
+        
+        <category>java</category>
+        
+      </item>
+    
+      <item>
+        <title>Flink Tutorial 01 ( Flink 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-flink-概念&quot;&gt;1. Flink 概念&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-flink-基本架构&quot;&gt;2. Flink 基本架构&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-flink-应用场景&quot;&gt;3. Flink 应用场景&lt;/h3&gt;
+
+&lt;h2 id=&quot;一-flink-概念&quot;&gt;一 、Flink 概念&lt;/h2&gt;
+
+&lt;p&gt;      Apache Flink 是一个用于处理无界和有界数据流的开源流处理框架。&lt;/p&gt;
+
+&lt;!-- Apache Flink 是一个针对无界和有界数据流进行有状态计算的框架。     --&gt;
+
+&lt;!-- Apache Flink 是为分布式、高性能、随时可用以及准确的流处理应用程序打造的开源流处理框架 --&gt;
+
+&lt;h3 id=&quot;1-处理框架&quot;&gt;1. 处理框架&lt;/h3&gt;
+
+&lt;p&gt;      处理框架负责对系统中的数据进行计算。通过对数据不同的处理方式进行划分，可以将处理框架分成批处理框架以及流处理框架。&lt;/p&gt;
+
+&lt;h4 id=&quot;11-批处理&quot;&gt;1.1 批处理&lt;/h4&gt;
+
+&lt;p&gt;      
+批处理主要&lt;br /&gt;
+批处理主要操作大容量静态数据集，并在计算过程完成后返回结果。&lt;/p&gt;
+
+&lt;h4 id=&quot;12-流处理&quot;&gt;1.2 流处理&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;无边界数据流 :&lt;br /&gt;
+&lt;br /&gt;
+有边界数据流 :&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;二-flink-基本架构&quot;&gt;二 、Flink 基本架构&lt;/h2&gt;
+
+&lt;h2 id=&quot;三-flink-应用场景&quot;&gt;三 、Flink 应用场景&lt;/h2&gt;
+
+</description>
+        <pubDate>Sun, 01 Dec 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/flink/2019/12/01/Flink-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/flink/2019/12/01/Flink-Tutorial-01.html</guid>
+        
+        <category>flink</category>
+        
+        
+        <category>flink</category>
+        
+      </item>
+    
+      <item>
+        <title>Zookeeper Tutorial 01 ( Zookeeper 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-zookeeper-介绍&quot;&gt;1. Zookeeper 介绍&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-zookeeper-数据模型&quot;&gt;2. Zookeeper 数据模型&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-zookeeper-会话&quot;&gt;3. Zookeeper 会话&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-zookeeper-监听器&quot;&gt;4. Zookeeper 监听器&lt;/h3&gt;
+
+&lt;h3 id=&quot;5-zookeeper-访问控制&quot;&gt;5. Zookeeper 访问控制&lt;/h3&gt;
+
+&lt;h2 id=&quot;一-zookeeper-介绍&quot;&gt;一 、Zookeeper 介绍&lt;/h2&gt;
+
+&lt;p&gt;      Zookeeper 是一种分布式协调服务。&lt;/p&gt;
+
+&lt;h2 id=&quot;二-zookeeper-数据模型&quot;&gt;二 、Zookeeper 数据模型&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://alicloud-samuel.oss-cn-shanghai.aliyuncs.com/gitshenbin.gitee.io/zookeeper/Zookeeper%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;Zookeeper 数据模型&quot; title=&quot;Zookeeper 数据模型&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;      Zookeeper 数据模型和数据结构中的树类似，由节点组成。不同之处在于每个节点可以存储数据。&lt;/p&gt;
+
+&lt;h3 id=&quot;1-节点--znodes-&quot;&gt;1. 节点 ( ZNodes )&lt;/h3&gt;
+
+&lt;p&gt;      Zookeeper 中节点被称为 znode ，可以用来存储数据。对于不同位置的节点，znode 采用路径引用的方式进行引用，这种方式使每个 znode 节点可以通过它所在的路径进行唯一标识。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;节点引用方式：&lt;br /&gt;
+      znode1 :         /znode1&lt;br /&gt;
+      znode2 :         /znode2&lt;br /&gt;
+      children1 :      /znode1/children1&lt;br /&gt;
+      children2 :      /znode1/children2&lt;br /&gt;
+      children3 :      /znode2/children3&lt;br /&gt;
+      children4 :      /znode2/children4&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;11-stat-结构体--stat-structure-&quot;&gt;1.1 stat 结构体 ( stat structure )&lt;/h4&gt;
+
+&lt;p&gt;      znode 节点维护了一个 stat 结构体，它包含了版本号、时间等数据。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;    zxid ( zookeeper transaction id ) 也叫事务 ID ，具有唯一性。它可以确定操作的先后顺序，如果 zxid1 比 zxid2 小，那么 zxid1 优先于 zxid2 发生。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;      在 Zookeeper 客户端中输入 get 指令可以获得指定节点的值。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[zk: localhost:2181(CONNECTED) 0] get /
+
+cZxid = 0x0
+ctime = Thu Jan 01 08:00:00 CST 1970
+mZxid = 0x0
+mtime = Thu Jan 01 08:00:00 CST 1970
+pZxid = 0x0
+cversion = -1
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x0
+dataLength = 0
+numChildren = 1
+
+======================================
+
+[zk: localhost:2181(CONNECTED) 1] create /node1 &quot;node_context&quot;
+Created /node1
+[zk: localhost:2181(CONNECTED) 2] get /node1
+&quot;node_context&quot;
+cZxid = 0x100000002
+ctime = Wed Dec 25 23:03:56 CST 2019
+mZxid = 0x100000002
+mtime = Wed Dec 25 23:03:56 CST 2019
+pZxid = 0x100000002
+cversion = 0
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x0
+dataLength = 14
+numChildren = 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;node_context          : znode 节点存储的数据，每个节点存储的数据大小不能超过 1M 。&lt;br /&gt;
+cZxid                       : znode 节点创建的事务 ID 。 &lt;br /&gt;
+ctime                       : znode 节点创建的时间 。  &lt;br /&gt;
+mZxid                      : znode 节点修改的事务 ID 。  &lt;br /&gt;
+mtime                      : znode 节点修改的时间。  &lt;br /&gt;
+pZxid                       : 当前 znode 节点中子节点最后一次修改的事务 ID 。  &lt;br /&gt;
+cversion                   : 子节点版本号。&lt;br /&gt;
+dataVersion             : 数据版本号。每次对 znode 节点进行 set 操作时， dataVersion 都会增加 1 。&lt;br /&gt;
+aclVersion               : 访问控制 ( ACL - Access Control List ) 版本号。&lt;br /&gt;
+ephemeralOwner    : 临时节点的 session id 。如果当前节点不是临时节点，则为 0 。&lt;br /&gt;
+dataLength              : znode 节点的数据长度。&lt;br /&gt;
+numChildren            : znode 节点的子节点数量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;12-节点类型&quot;&gt;1.2 节点类型&lt;/h4&gt;
+
+&lt;p&gt;      znode 节点根据存活时间可以划分为临时节点和持久节点。&lt;/p&gt;
+
+&lt;p&gt;      a) : 临时节点 ( ephemeral )&lt;/p&gt;
+
+&lt;p&gt;            临时节点的存活时间和会话有关，当客户端和服务器之间的会话结束时，该节点会自动删除。&lt;/p&gt;
+
+&lt;p&gt;      b) : 持久节点 ( persistent )&lt;/p&gt;
+
+&lt;p&gt;            持久节点的存活时间和会话无关，只有在客户端进行删除节点操作时，节点才会消失。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;创建 znode 节点时既可以创建临时节点也可以创建持久节点，但是需要注意的是临时节点不能有子节点。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- #### 1.3 Time in ZooKeeper   --&gt;
+
+&lt;!-- &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;a) : zxid  
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;每当 zookeeper 状态发生变化时都会收到一个 zxid ( zookeeper transaction id ) 形式的时间戳。zxid 是唯一的，因此可以通过 zxid 确定操作先后顺序。  
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;b) : version numbers  
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;version numbers 简称版本号，每当 znode 节点发生变化时，相应的版本号会增加。 Zookeeper 中三个版本号分别为 cversion 、dataVersion 、aclVersion 。  
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;c) : ticks  
+
+当使用 Zookeeper 
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;d) : real time  
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Zookeeper 通过在 stat 结构体中放置时间戳参数来记录当前 znode 节点的创建 / 修改时间。   --&gt;
+
+&lt;!-- #### 1.2 节点特性   --&gt;
+
+&lt;!-- ### 2.  --&gt;
+
+&lt;h2 id=&quot;三-zookeeper-会话--session-&quot;&gt;三 、Zookeeper 会话 ( session )&lt;/h2&gt;
+
+&lt;p&gt;      Zookeeper 使用 session 来标识客户端与服务器之间的连接状态。Zookeeper 客户端通过创建一个 handle 来建立与服务器之间的连接，一旦创建了 handle ，handle 便处于 connecting 状态并且客户端会尝试和某个服务器进行连接，如果连接成功，handle 的状态便更新成 connected 状态。如果在连接过程中发生了无法恢复的错误，handle 将变成 closed 状态。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;无法恢复的错误 / 故障&lt;br /&gt;
+      session 过期或认证失败&lt;br /&gt;
+      客户端关闭连接&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;四-zookeeper-监听器&quot;&gt;四 、Zookeeper 监听器&lt;/h2&gt;
+
+&lt;p&gt;      Zookeeper 提供了许多 API 操作，常用的有 create 、 delete 、 exists 、 getData 、 setData 、 getChildren 。其中 exises 、getData 、getChildren 属于读取操作，在进行读取操作的时候可以选择是否设置一个监听器，每当 znode 节点发生变化时，将会触发该节点上已经注册的事件，请求监听的客户端便会接收到相应的异步通知。&lt;/p&gt;
+
+&lt;h2 id=&quot;五-zookeeper-访问控制&quot;&gt;五 、Zookeeper 访问控制&lt;/h2&gt;
+
+&lt;p&gt;create : 可以创建一个子节点&lt;/p&gt;
+
+&lt;p&gt;read :  可以从 znode 节点中获取数据以及子节点集合&lt;/p&gt;
+
+&lt;p&gt;write : 可以对该节点进行读写操作&lt;/p&gt;
+
+&lt;p&gt;delete : 可以进行删除子节点操作&lt;/p&gt;
+
+&lt;p&gt;admin : 可以设置权限&lt;/p&gt;
+
+&lt;h2 id=&quot;六--zookeeper-选举机制&quot;&gt;六 、 Zookeeper 选举机制&lt;/h2&gt;
+
+&lt;p&gt;      Zookeeper 集群通常是由一个 Leader 以及多个 Follower 组成，其中 Leader 是通过 Zookeeper 内部的选举机制产生。选举时，集群中的节点默认都处于 Looking 状态，每个节点都会向其他节点发起投票，其中包含了服务器 ID 以及最新的事务 ID 。一旦某个节点获得的投票数超过半数时，则该节点会成为 Leader ，其他节点称为 Follower 。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/zookeeper/2019/02/15/Zookeeper-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/zookeeper/2019/02/15/Zookeeper-Tutorial-01.html</guid>
+        
+        <category>zookeeper</category>
+        
+        
+        <category>zookeeper</category>
+        
+      </item>
+    
+      <item>
+        <title>Zookeeper Tutorial 01 ( Zookeeper 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-zookeeper-介绍&quot;&gt;1. Zookeeper 介绍&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-zookeeper-数据模型&quot;&gt;2. Zookeeper 数据模型&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-zookeeper-会话&quot;&gt;3. Zookeeper 会话&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-zookeeper-监听器&quot;&gt;4. Zookeeper 监听器&lt;/h3&gt;
+
+&lt;h3 id=&quot;5-zookeeper-应用场景&quot;&gt;5. Zookeeper 应用场景&lt;/h3&gt;
+
+&lt;h2 id=&quot;一-zookeeper-介绍&quot;&gt;一 、Zookeeper 介绍&lt;/h2&gt;
+
+&lt;p&gt;      Zookeeper 是一种分布式协调服务。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;分布式  : &lt;br /&gt;
+    &lt;br /&gt;
+    协调服务 :&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;二-zookeeper-数据模型&quot;&gt;二 、Zookeeper 数据模型&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://alicloud-samuel.oss-cn-shanghai.aliyuncs.com/gitshenbin.gitee.io/zookeeper/Zookeeper%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.png&quot; alt=&quot;Zookeeper 数据模型&quot; title=&quot;Zookeeper 数据模型&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;      Zookeeper 数据模型和数据结构中的树类似，由节点组成。不同之处在于每个节点可以存储数据。&lt;/p&gt;
+
+&lt;h3 id=&quot;1-节点--znodes-&quot;&gt;1. 节点 ( ZNodes )&lt;/h3&gt;
+
+&lt;p&gt;      Zookeeper 中节点被称为 znode ，可以用来存储数据。对于不同位置的节点，znode 采用路径引用的方式进行引用，这种方式使每个 znode 节点可以通过它所在的路径进行唯一标识。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;节点引用方式：&lt;br /&gt;
+      znode1 :         /znode1&lt;br /&gt;
+      znode2 :         /znode2&lt;br /&gt;
+      children1 :      /znode1/children1&lt;br /&gt;
+      children2 :      /znode1/children2&lt;br /&gt;
+      children3 :      /znode2/children3&lt;br /&gt;
+      children4 :      /znode2/children4&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;11-stat-结构体--stat-structure-&quot;&gt;1.1 stat 结构体 ( stat structure )&lt;/h4&gt;
+
+&lt;p&gt;      znode 节点维护了一个 stat 结构体，它包含了版本号、时间戳等数据。每次 zookeeper 状态发生变化时都会收到一个 zxid 形式的时间戳。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;    zxid ( zookeeper transaction id ) 也叫事务 ID ，具有唯一性。它可以确定操作的先后顺序，如果 zxid1 比 zxid2 小，那么 zxid1 优先于 zxid2 发生。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;      在 Zookeeper 客户端中输入 get 指令可以获得指定节点的数据。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[zk: localhost:2181(CONNECTED) 0] get /
+
+cZxid = 0x0
+ctime = Thu Jan 01 08:00:00 CST 1970
+mZxid = 0x0
+mtime = Thu Jan 01 08:00:00 CST 1970
+pZxid = 0x0
+cversion = -1
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x0
+dataLength = 0
+numChildren = 1
+
+======================================
+
+[zk: localhost:2181(CONNECTED) 1] create /node1 &quot;node_context&quot;
+Created /node1
+[zk: localhost:2181(CONNECTED) 2] get /node1
+&quot;node_context&quot;
+cZxid = 0x100000002
+ctime = Wed Dec 25 23:03:56 CST 2019
+mZxid = 0x100000002
+mtime = Wed Dec 25 23:03:56 CST 2019
+pZxid = 0x100000002
+cversion = 0
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x0
+dataLength = 14
+numChildren = 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;node_context          : znode 节点存储的数据，每个节点存储的数据大小不能超过 1M 。&lt;br /&gt;
+cZxid                       : znode 节点创建的事务 ID 。 &lt;br /&gt;
+ctime                       : znode 节点创建的时间 。  &lt;br /&gt;
+mZxid                      : znode 节点修改的事务 ID 。  &lt;br /&gt;
+mtime                      : znode 节点修改的时间。  &lt;br /&gt;
+pZxid                       : 当前 znode 节点中子节点最后一次修改的事务 ID 。  &lt;br /&gt;
+cversion                   : 子节点版本号。&lt;br /&gt;
+dataVersion             : 数据版本号。每次对 znode 节点进行 set 操作时， dataVersion 都会增加 1 。&lt;br /&gt;
+aclVersion               : 访问控制 ( ACL - Access Control List ) 版本号。&lt;br /&gt;
+ephemeralOwner    : 临时节点的 session id 。如果当前节点不是临时节点，则为 0 。&lt;br /&gt;
+dataLength              : znode 节点的数据长度。&lt;br /&gt;
+numChildren            : znode 节点的子节点数量。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;12-会话--session-&quot;&gt;1.2 会话 ( session )&lt;/h4&gt;
+
+&lt;p&gt;      Zookeeper 通过 session 来标识客户端与服务器之间的连接状态。Zookeeper 客户端通过创建一个 handle 来建立与服务器之间的连接，一旦创建了 handle ，handle 便处于 connecting 状态并且客户端会尝试和某个服务器进行连接，如果连接成功，handle 的状态便更新成 connected 状态。如果在连接过程中发生了无法恢复的错误，handle 将变成 closed 状态。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;无法恢复的错误 / 故障&lt;br /&gt;
+      连接超时 ( session 过期 )&lt;br /&gt;
+      认证 / 授权失败&lt;br /&gt;
+      客户端关闭连接&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;13-节点类型&quot;&gt;1.3 节点类型&lt;/h4&gt;
+
+&lt;p&gt;      znode 节点根据存活时间可以划分为临时节点和持久节点。&lt;/p&gt;
+
+&lt;p&gt;      a) : 临时节点 ( ephemeral nodes )&lt;/p&gt;
+
+&lt;p&gt;            临时节点的存活时间和会话有关，当客户端和服务器之间的会话结束时，该节点会自动删除。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;创建 znode 节点时既可以创建临时节点也可以创建持久节点，但是需要注意的是临时节点不能有子节点。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;使用 create -e 指令可以创建临时节点&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[zk: localhost:4180(CONNECTED) 4] create -e /xing/ei world     
+Created /xing/ei  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;      b) : 持久节点 ( persistent nodes )&lt;/p&gt;
+
+&lt;p&gt;            持久节点的存活时间和会话无关，只有在客户端进行删除节点操作时，节点才会消失。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;使用 create 指令可以创建持久节点&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[zk: localhost:4180(CONNECTED) 4] create /xing/ei world     
+Created /xing/ei  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;      Zookeeper 支持创建顺序节点 ( sequence nodes )，在创建顺序节点时，Zookeeper 服务器会在指定的节点名称后面添加一个递增的数字序列。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;使用 create -s 指令可以创建顺序节点&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[zk: localhost:4180(CONNECTED) 0] create -s /xing/item world  
+Created /xing/item0000000001  
+[zk: localhost:4180(CONNECTED) 1] create -s /xing/item world  
+Created /xing/item0000000002  
+[zk: localhost:4180(CONNECTED) 2] create -s /xing/item world  
+Created /xing/item0000000003  
+[zk: localhost:4180(CONNECTED) 3] create -s /xing/item world  
+Created /xing/item0000000004  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;因此可以创建同名的 znode 节点 ( 不同之处 )&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 15 Jan 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/zookeeper/2019/01/15/Zookeeper-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/zookeeper/2019/01/15/Zookeeper-Tutorial-01.html</guid>
+        
+        <category>zookeeper</category>
+        
+        
+        <category>zookeeper</category>
+        
+      </item>
+    
+      <item>
+        <title>Hadoop Tutorial 04 ( Hadoop YARN 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-yarn-是什么&quot;&gt;1. YARN 是什么&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-yarn-架构&quot;&gt;2. YARN 架构&lt;/h3&gt;
+
+&lt;h2 id=&quot;一--yarn-是什么&quot;&gt;一 、 YARN 是什么&lt;/h2&gt;
+
+&lt;p&gt;      传统的 MapReduce 架构拥有 JobTracker 和 TaskTracker 两个组件，存在单点故障以及资源利用率低等问题。 YARN 将 JobTracker 的功能进行拆分，避免了传统架构的单点故障问题以及资源利用率问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;二--yarn-架构&quot;&gt;二 、 YARN 架构&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-resourcemanager&quot;&gt;1. ResourceManager&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-nodemanager&quot;&gt;2. NodeManager&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-applicationmaster&quot;&gt;3. ApplicationMaster&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-container&quot;&gt;4. Container&lt;/h3&gt;
+
+</description>
+        <pubDate>Fri, 21 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/hadoop/2018/12/21/Hadoop-Tutorial-04.html</link>
+        <guid isPermaLink="true">http://localhost:4000/hadoop/2018/12/21/Hadoop-Tutorial-04.html</guid>
+        
+        <category>hadoop</category>
+        
+        
+        <category>hadoop</category>
+        
+      </item>
+    
+      <item>
+        <title>Hadoop Tutorial 03 ( Hadoop MapReduce 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-mapreduce-是什么&quot;&gt;1. MapReduce 是什么&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-mapreduce-架构&quot;&gt;2. MapReduce 架构&lt;/h3&gt;
+
+&lt;h2 id=&quot;一--mapreduce-是什么&quot;&gt;一 、 MapReduce 是什么&lt;/h2&gt;
+
+&lt;p&gt;      MapReduce 是一种分布式的计算框架。指定一个 Map 函数和一个 Reduce 函数，分别用于把一组键值对映射成一组新的键值对 ( Map ) 和保证所有映射的键值对中的每一个共享相同的键组 ( Reduce )。&lt;/p&gt;
+
+&lt;h2 id=&quot;二--mapreduce-架构&quot;&gt;二 、 MapReduce 架构&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-map&quot;&gt;1. Map&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-reduce&quot;&gt;2. Reduce&lt;/h3&gt;
+
+</description>
+        <pubDate>Wed, 19 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/hadoop/2018/12/19/Hadoop-Tutorial-03.html</link>
+        <guid isPermaLink="true">http://localhost:4000/hadoop/2018/12/19/Hadoop-Tutorial-03.html</guid>
+        
+        <category>hadoop</category>
+        
+        
+        <category>hadoop</category>
+        
+      </item>
+    
+      <item>
+        <title>Hadoop Tutorial 02 ( Hadoop HDFS 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-hdfs-是什么&quot;&gt;1. HDFS 是什么&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-hdfs-架构&quot;&gt;2. HDFS 架构&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-hdfs-数据流&quot;&gt;3. HDFS 数据流&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-namenode-工作机制&quot;&gt;4. NameNode 工作机制&lt;/h3&gt;
+
+&lt;h3 id=&quot;5-datanode-工作机制&quot;&gt;5. DataNode 工作机制&lt;/h3&gt;
+
+&lt;h2 id=&quot;一--hdfs-是什么&quot;&gt;一 、 HDFS 是什么&lt;/h2&gt;
+
+&lt;p&gt;      HDFS ( Hadoop Distributed File System ) 称为 Hadoop 分布式文件系统。用于存储文件，通过目录树来定位文件所在位置。具有高可靠、高吞吐量的特性，适合一次写入、多次读出的场景。&lt;/p&gt;
+
+&lt;h2 id=&quot;二--hdfs-架构&quot;&gt;二 、 HDFS 架构&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-block-数据块&quot;&gt;1. Block 数据块&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-namenode&quot;&gt;2. NameNode&lt;/h3&gt;
+
+&lt;p&gt;      NameNode 是一个中心服务器，主要用于存储文件系统的元数据以及每个文件所对应的的块信息。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-datanode&quot;&gt;3. DataNode&lt;/h3&gt;
+
+&lt;p&gt;      DataNode 主要用于存储文件数据块信息，每一个数据块都可以在多个 DataNode 中存储多个副本。&lt;/p&gt;
+
+&lt;h3 id=&quot;4-secondary-namenode&quot;&gt;4. Secondary NameNode&lt;/h3&gt;
+
+&lt;p&gt;      Secondary NameNode 用来监控 HDFS 状态的辅助后台程序，每隔一段时间 Secondary NameNode 会自动获取 HDFS 元数据的快照。&lt;/p&gt;
+
+&lt;h2 id=&quot;三--hdfs-数据流&quot;&gt;三 、 HDFS 数据流&lt;/h2&gt;
+
+&lt;h2 id=&quot;四--namenode-工作机制&quot;&gt;四 、 NameNode 工作机制&lt;/h2&gt;
+
+&lt;h2 id=&quot;五--datanode-工作机制&quot;&gt;五 、 DataNode 工作机制&lt;/h2&gt;
+
+</description>
+        <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/hadoop/2018/12/17/Hadoop-Tutorial-02.html</link>
+        <guid isPermaLink="true">http://localhost:4000/hadoop/2018/12/17/Hadoop-Tutorial-02.html</guid>
+        
+        <category>hadoop</category>
+        
+        
+        <category>hadoop</category>
+        
+      </item>
+    
+      <item>
+        <title>Hadoop Tutorial 01 ( Hadoop 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-hadoop-是什么&quot;&gt;1. Hadoop 是什么&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-hadoop-发展史&quot;&gt;2. Hadoop 发展史&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-hadoop-的优势与劣势&quot;&gt;3. Hadoop 的优势与劣势&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-hadoop-组成&quot;&gt;4. Hadoop 组成&lt;/h3&gt;
+
+&lt;h2 id=&quot;一--hadoop-是什么&quot;&gt;一 、 Hadoop 是什么&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://alicloud-samuel.oss-cn-shanghai.aliyuncs.com/gitshenbin.gitee.io/hadoop/Hadoop.png&quot; alt=&quot;Hadoop&quot; title=&quot;Hadoop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;      Hadoop 是由 Apache 基金会所开发的分布式基础架构。具有数据存储以及数据高速运算的功能，适合一次写入、多次读出的应用场景。&lt;/p&gt;
+
+&lt;!-- &gt; 分布式系统  
+    　&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;分布式系统是指由多个计算机节点组成的系统，节点之间通过网络进行通信。   --&gt;
+
+&lt;h2 id=&quot;二--hadoop-发展史&quot;&gt;二 、 Hadoop 发展史&lt;/h2&gt;
+
+&lt;h2 id=&quot;三--hadoop-特征&quot;&gt;三 、 Hadoop 特征&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-高可靠性&quot;&gt;1. 高可靠性&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-高扩展性&quot;&gt;2. 高扩展性&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-高效性&quot;&gt;3. 高效性&lt;/h3&gt;
+
+&lt;h3 id=&quot;4-高容错性&quot;&gt;4. 高容错性&lt;/h3&gt;
+
+&lt;h2 id=&quot;四--hadoop-组成&quot;&gt;四 、 Hadoop 组成&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-hdfs&quot;&gt;1. HDFS&lt;/h3&gt;
+
+&lt;p&gt;      HDFS ( Hadoop Distributed File System ) 称为 Hadoop 分布式文件系统。用于存储文件，适合一次写入、多次读出的场景，具有高可靠、高吞吐量的特性。&lt;/p&gt;
+
+&lt;h3 id=&quot;2-mapreduce&quot;&gt;2. MapReduce&lt;/h3&gt;
+
+&lt;p&gt;      MapReduce 是一种分布式的计算框架。指定一个 Map 函数和一个 Reduce 函数，分别用于把一组键值对映射成一组新的键值对 ( Map ) 和保证所有映射的键值对中的每一个共享相同的键组 ( Reduce )。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-yarn&quot;&gt;3. YARN&lt;/h3&gt;
+
+&lt;p&gt;      传统的 MapReduce 架构拥有 JobTracker 和 TaskTracker 两个组件，存在单点故障以及资源利用率低等问题。 YARN 将 JobTracker 的功能进行拆分，避免了传统架构的单点故障问题以及资源利用率问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;4-common&quot;&gt;4. Common&lt;/h3&gt;
+
+&lt;p&gt;      Common 是 Hadoop 中的一个辅助工具，为其他模块提供工具支持。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/hadoop/2018/12/15/Hadoop-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/hadoop/2018/12/15/Hadoop-Tutorial-01.html</guid>
+        
+        <category>hadoop</category>
+        
+        
+        <category>hadoop</category>
+        
+      </item>
+    
+      <item>
+        <title>Bigdata Tutorial 02 ( Bigdata 分类 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+</description>
+        <pubDate>Mon, 03 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/bigdata/2018/12/03/Bigdata-Tutorial-02.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bigdata/2018/12/03/Bigdata-Tutorial-02.html</guid>
+        
+        <category>bigdata</category>
+        
+        
+        <category>bigdata</category>
+        
+      </item>
+    
+      <item>
+        <title>Bigdata Tutorial 01 ( Bigdata 概述 )</title>
+        <description>&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-bigdata-概念&quot;&gt;1. Bigdata 概念&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-bigdata-特点&quot;&gt;2. Bigdata 特点&lt;/h3&gt;
+
+&lt;h3 id=&quot;3-bigdata-作用&quot;&gt;3. Bigdata 作用&lt;/h3&gt;
+
+&lt;h2 id=&quot;一--bigdata-概念&quot;&gt;一 、 Bigdata 概念&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://alicloud-samuel.oss-cn-shanghai.aliyuncs.com/gitshenbin.gitee.io/bigdata/bigdata.jpg&quot; alt=&quot;Bigdata&quot; title=&quot;Bigdata&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;      大数据  ( big data )  从字面上来看指的是大量的数据。在如今数据量爆发式增长的时代，每天产生上百万乃至上千万条数据已经变得家常便饭。这些数据数据规模庞大、产生速度快、形式多样，使用传统的数据分析方法很难进行有效地分析，需要使用新处理模式进行高效的数据分析。&lt;/p&gt;
+
+&lt;h2 id=&quot;二--bigdata-特点&quot;&gt;二 、 Bigdata 特点&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-数量大--volume-&quot;&gt;1. 数量大 ( volume )&lt;/h3&gt;
+
+&lt;p&gt;      数量指的是数据量，目前数据量保持着一种前所未有的的速度增长着。通常数据量达到 TB 以上就被认为大数据，在将来数据量的级别甚至会比现在更大。&lt;/p&gt;
+
+&lt;h3 id=&quot;2-速度快--velocity-&quot;&gt;2. 速度快 ( velocity )&lt;/h3&gt;
+
+&lt;p&gt;      数据每时每刻都在生产，产生的速度日益增加，使用传统的数据分析方法难以有效地进行分析。如何快速的处理、分析快速增长的数据成为目前需要解决的首要问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-多样化--variety-&quot;&gt;3. 多样化 ( variety )&lt;/h3&gt;
+
+&lt;p&gt;      数据的类型是多样的，包括了结构化数据以及非结构化数据。这些多样类型的数据使数据的处理难度大大提升。&lt;/p&gt;
+
+&lt;h2 id=&quot;三--bigdata-作用&quot;&gt;三 、 Bigdata 作用&lt;/h2&gt;
+
+&lt;h4 id=&quot;1-商品推荐&quot;&gt;      1. 商品推荐&lt;/h4&gt;
+
+&lt;h4 id=&quot;2-人工智能&quot;&gt;      2. 人工智能&lt;/h4&gt;
+
+</description>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/bigdata/2018/12/01/Bigdata-Tutorial-01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bigdata/2018/12/01/Bigdata-Tutorial-01.html</guid>
+        
+        <category>bigdata</category>
+        
+        
+        <category>bigdata</category>
+        
+      </item>
+    
+  </channel>
+</rss>
