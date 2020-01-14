@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
     <link rel="stylesheet" href="/assets/css/syntax.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/assets/components/swiper-5.2.0/css/swiper.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="/assets/css/common.css">
 
@@ -41,7 +44,8 @@
     
 
     <link rel="stylesheet" type="text/css" href="/assets/components/font-awesome-4.7.0/css/font-awesome.css">
-
+    <!-- Swiper JS -->
+    <script src="/assets/components/swiper-5.2.0/js/swiper.min.js"></script>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/js/lock.js"></script>
@@ -65,14 +69,6 @@
         <div class="container" style="padding-left: 25px;padding-right: 25px;">
             <div class="topbar-menu">
                 
-                <div class="item">
-                    <a href="/about.html"
-                       target="_self"
-                       title="关于">
-                        关于
-                    </a>
-                </div>
-                
             </div>
         </div>
     </div>
@@ -94,43 +90,6 @@
             </div>
             
             <div class=" site-header-nav-item hvr-underline-from-center">
-                <a href=""
-                   target=""
-                   title="">
-                    
-                </a>
-                
-            </div>
-            
-            <div class=" site-header-nav-item hvr-underline-from-center">
-                <a href="/"
-                   target="_self"
-                   title="Java">
-                    Java
-                </a>
-                
-                <ul class="submenu">
-                    
-                    <li>
-                        <a class="subNav" href="/java_se_tutorial.html" target="">
-                            Java 教程
-                        </a>
-                    </li>
-                    
-                </ul>
-                
-            </div>
-            
-            <div class=" site-header-nav-item hvr-underline-from-center">
-                <a href=""
-                   target=""
-                   title="">
-                    
-                </a>
-                
-            </div>
-            
-            <div class=" site-header-nav-item hvr-underline-from-center">
                 <a href="/archives.html"
                    target=""
                    title="Archives">
@@ -145,15 +104,12 @@
 
 
         <div class="content">
-            <section class="jumbotron geopattern" data-pattern-id="All articles are here" data-geopattern-id="archives">
-    <div class="container">
-        <div id="jumbotron-meta-info">        
-            <h1>All articles are here</h1>
-            <span class="meta-info">
-                
-                
-            </span>
-        </div>
+            <section class="jumbotron geopattern" data-pattern-id="All articles are here" data-geopattern-id="">
+    <div class="container"> 
+        <h1>All articles are here</h1>
+        <span class="meta-info" style="display: none;">
+            
+        </span>
     </div>
 </section>
 <script>
@@ -168,35 +124,7 @@
 <article class="post container">
 
     <ul class="archives-list">
-    <h3>2020</h3>
-    
-        
-            <li>
-                <span>01-03</span>
-                <a href="http://localhost:4000/java_se_tutorial/2020/01/03/Java-Tutorial-01.html" style="margin-left: 6px;">[ Java Tutorial ] Java 学习计划</a>
-            </li>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
+
 </ul>
 <script>
     $(document).ready(function(){
@@ -217,7 +145,7 @@
     <div class="site-footer">
       
           <div class="card text-center">
-            <!-- 京ICP备15067287号-3 -->
+            
            
         </div>
         <div class="site-footer-links mobile-hidden">

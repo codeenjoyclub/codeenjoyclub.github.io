@@ -65,15 +65,6 @@ paginate_path: 'page:num'
 # Navigation. top menu list
 menus:
 
-  # -
-    # href: /link.html
-    # label: 友链
-    # target: _self
-
-  -
-    href: /about.html
-    label: 关于
-    target: _self
 
 # Navigation. main menu list
 navs:
@@ -81,116 +72,9 @@ navs:
   -
     href: /
     label: Home
-
-  # -
-    # href: /open-source
-    # label: Open-Source
-
-  # -
-  #   href: /spring-boot.html
-  #   label: Spring Boot
-  #   target: _self
-  #   subnav:
-
-  #     -
-  #       subHref: /spring-boot.html
-  #       subLabel: Spring Boot
-
-  #     -
-  #       subHref: /spring-cloud.html
-  #       subLabel: Spring Cloud
-
-  - 
-    # href: /
-    # label: Certificate
-    # target: _self
-    # subnav:
-
-    -
-      # subHref: /mandarin
-      # subHref: /mandarin.html
-      # subLabel: Mandarin
-
-      # comprehensive_quality、
-    -
-      # subHref: /comprehensive_quality
-      # subHref: /comprehensive_quality.html
-      # subLabel: Comprehensive<br>Quality
-
-  -
-    href: /
-    label: Java
-    target: _self
-    subnav:
-
-    -
-      subHref: /java_se_tutorial.html
-      subLabel: Java 教程
-
-    # -
-      # subHref: /java_se.html
-      # subLabel: Java 基础
-
-    # -
-      # subHref: /
-      # subLabel: JavaWeb
-  
-  # -
-  #   href: /
-  #   label: Spring
-  #   target: _self
-  #   subnav:
-
-  #   -
-  #     subHref: /
-  #     subLabel: SpringBoot
-
-  #   -
-  #     subHref: /
-  #     subLabel: SpringCloud
-
-  -
-    # href: /
-    # label: Bigdata
-    # target: _self
-    # subnav:
-
-    -
-      # subHref: /bigdata
-      # subHref: /bigdata.html
-      # subLabel: Bigdata
-
-    
-    -
-      # subHref: /hadoop
-      # subHref: /hadoop.html
-      # subLabel: Hadoop
-
-    -
-      # subHref: /zookeeper
-      # subHref: /zookeeper.html
-      # subLabel: Zookeeper
-
-    -
-      # subHref: /flink
-      # subHref: /flink.html
-      # subLabel: Flink
-
-  # -
-    # href: /blog
-    # label: Blog
-
-  # -
-    # href: /bookmark
-    # label: Bookmark
-
   -
     href: /archives.html
     label: Archives
-
-  # -
-    # href: /about.html
-    # label: About
 
 
 # Sidebar to show popular repo

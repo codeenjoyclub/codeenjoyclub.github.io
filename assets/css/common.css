@@ -4,14 +4,225 @@
     font-family: Microsoft YaHei, "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+h1 {
+    cursor: default;
+}
+
+span {
+    cursor: default;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*swiper css*/
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+/** index card **/
+.index-content-middle-top {
+    height: 125px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.index-content-middle-top img {
+    border-radius: 5px;
+}
+
+.index-content-middle-bottom {
+    height: 125px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.index-content-middle-bottom img {
+    border-radius: 5px;
+}
+
+.swiper-wriper-container {
+    height: 260px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.swiper-slide img {
+    cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0;
+}
+
+.swiper-button-prev-moveout {
+    transition: all 150ms;
+    animation:leftmoveout 1s;
+    -webkit-animation:leftmoveout 1s; /*Safari and Chrome*/
+    animation-fill-mode:forwards;
+}
+
+.swiper-button-next-moveout {
+    transition: all 150ms;
+    animation:rightmoveout 1s;
+    -webkit-animation:rightmoveout 1s; /*Safari and Chrome*/
+    animation-fill-mode:forwards;
+}
+
+@keyframes leftmoveout
+{
+	from {left:20px;}
+	to {left:10px;}
+}
+
+@-webkit-keyframes leftmoveout /*Safari and Chrome*/
+{
+	from {left:20px;}
+	to {left:10px;}
+}
+
+@keyframes rightmoveout
+{
+	from {right:20px;}
+	to {right:10px;}
+}
+
+@-webkit-keyframes rightmoveout /*Safari and Chrome*/
+{
+	from {right:20px;}
+	to {right:10px;}
+}
+
+.swiper-button-prev-movein {
+    transition: all 150ms;
+    animation:leftmovein 1s;
+    -webkit-animation:leftmovein 1s; /*Safari and Chrome*/
+    animation-fill-mode:forwards;
+}
+
+.swiper-button-next-movein {
+    transition: all 150ms;
+    animation:rightmovein 1s;
+    -webkit-animation:rightmovein 1s; /*Safari and Chrome*/
+    animation-fill-mode:forwards;
+}
+
+@keyframes leftmovein
+{
+	from {left:10px;}
+	to {left:20px;}
+}
+
+@-webkit-keyframes leftmovein /*Safari and Chrome*/
+{
+	from {left:10px;}
+	to {left:20px;}
+}
+
+@keyframes rightmovein
+{
+	from {right:10px;}
+	to {right:20px;}
+}
+
+@-webkit-keyframes rightmovein /*Safari and Chrome*/
+{
+	from {right:10px;}
+	to {right:20px;}
+}
+
+.index-card {
+    margin-top: 5px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.index-card-top {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eceff2;
+    color: #009688;
+}
+
+.index-card-middle-list {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-card-middle-list span {
+    font-size: 12px;
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.index-card-middle-list a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.index-card-middle-list a:hover {
+    color: #009688;
+}
+
+.index-card-foot {
+    text-align: right;
+}
+
+.index-card-foot a {
+    color: #009688;
+}
+
 /** business card **/
 .business-card {
     /* width: 100%; */
-    height: 230px;
+    height: 260px;
     background-color: #009688;
     margin: 10px 0 10px 10px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -180,6 +391,10 @@
 
 .jumbotron #jumbotron-meta-info {
     margin-top: 0;
+}
+
+.jumbotron #jumbotron-meta-info h1 {
+    margin-bottom: 10px;
 }
 
 .jumbotron .meta-info {

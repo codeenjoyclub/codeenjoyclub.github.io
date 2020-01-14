@@ -1,9 +1,0 @@
-I"œ<table>
-  <tbody>
-    <tr>
-      <td>[samuel@VM_0_16_centos ~]$ curl -L https://get.rvm.io</td>
-      <td>bash -s stable</td>
-    </tr>
-  </tbody>
-</table>
-:ET

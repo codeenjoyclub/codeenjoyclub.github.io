@@ -1,16 +1,11 @@
 <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}" data-geopattern-id="{{ page.background-color }}">
-    <div class="container">
-        <div id="jumbotron-meta-info">        
-            <h1>{{ page.title }}</h1>
-            <span class="meta-info">
-                {% if page.subtitle %}
-                    {{ page.subtitle }}
-                {% endif %}
-                {% if page.date %}
-                <i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: "%Y/%m/%d" }}
-                {% endif %}
-            </span>
-        </div>
+    <div class="container"> 
+        <h1>{{ page.title }}</h1>
+        <span class="meta-info" style="display: none;">
+            {% if page.subtitle %}
+                {{ page.subtitle }}
+            {% endif %}
+        </span>
     </div>
 </section>
 <script>
